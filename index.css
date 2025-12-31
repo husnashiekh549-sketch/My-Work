@@ -15,6 +15,12 @@
 html {
     font-size: 62.5%;
 }
+body {
+    margin: 0;
+    overflow-x: hidden;
+    padding-top: 90px;
+    background-color: #2a853c; 
+}
 
 /* HEADER */
 header {
@@ -51,7 +57,9 @@ header {
 
 .navbar a:hover {
     color: #fff;
+    border-bottom: 2px solid #2a853c;
 }
+
 
 /* SEARCH */
 .search {
@@ -76,7 +84,10 @@ header {
 
 /* HERO SECTION */
 .hero {
+    margin: 0;
     height: 100vh;
+    min-height: 600px;
+    padding-top: 0%; 
     background:
         linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
         url("istockphoto.jpg")
@@ -265,7 +276,7 @@ header {
     display: inline-block;
     text-align: center;
 }
-.resourcebtn span {
+.resource-btn span {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -392,8 +403,10 @@ header {
 }
 
 
-/* TABLET */
+/* TABLET DEVICES */
+
 @media (max-width: 990px) {
+
     header {
         padding: 1.5rem 6%;
     }
@@ -401,32 +414,70 @@ header {
     .srch {
         width: 150px;
     }
+
+    .hero-content h1 {
+        font-size: 3.8rem;
+    }
+
+    .hero-content p {
+        font-size: 1.5rem;
+    }
 }
 
-/* MOBILE */
+
+
+/* MOBILE DEVICES */
+
 @media (max-width: 768px) {
+
     header {
         flex-direction: column;
         align-items: flex-start;
-        gap: 1.5rem;
+        gap: 1.2rem;
+        padding: 1.2rem 6%;
     }
 
     .navbar {
         flex-direction: column;
         width: 100%;
+        gap: 1rem;
     }
 
-    .search,
+    .search {
+        width: 100%;
+    }
+
     .srch {
         width: 100%;
     }
-      .footer-container {
+
+    /* Hero fix for stacked navbar */
+    .hero {
+        margin-top: 140px;
+        min-height: 80vh;
+    }
+
+    .hero-content h1 {
+        font-size: 3.2rem;
+    }
+
+    .hero-content p {
+        font-size: 1.4rem;
+    }
+
+    /* Footer layout */
+    .footer-container {
         flex-direction: column;
         text-align: left;
-}}
+    }
+}
 
-/* SMALL MOBILE */
+
+
+/* SMALL MOBILE DEVICES */
+
 @media (max-width: 480px) {
+
     .logo {
         font-size: 1.8rem;
     }
@@ -437,5 +488,23 @@ header {
 
     .btn {
         font-size: 1.2rem;
+    }
+
+    .hero {
+        margin-top: 140px;
+        padding: 40px 5%;
+    }
+
+    .hero-content h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero-content p {
+        font-size: 1.3rem;
+    }
+
+    .contact-container {
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }

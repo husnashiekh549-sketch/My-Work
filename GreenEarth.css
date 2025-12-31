@@ -2,7 +2,6 @@
     --green: #2b912b;
 }
 
-/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -36,7 +35,6 @@ header {
     z-index: 1000;
 }
 
-/* LOGO */
 .logo {
     font-size: 2.2rem;
     font-weight: bold;
@@ -60,8 +58,6 @@ header {
     border-bottom: 2px solid #2a853c;
 }
 
-
-/* SEARCH */
 .search {
     display: flex;
 }
@@ -99,7 +95,6 @@ header {
     padding: 0 9%;
 }
 
-/* HERO TEXT */
 .hero-content h1 {
     font-size: 4.5rem;
     color: #fff;
@@ -128,7 +123,6 @@ header {
     text-align: center;
 }
 
-/* hover background animation */
 .hero-btn span {
     position: absolute;
     left: 0;
@@ -451,7 +445,6 @@ header {
         width: 100%;
     }
 
-    /* Hero fix for stacked navbar */
     .hero {
         margin-top: 140px;
         min-height: 80vh;
@@ -465,7 +458,6 @@ header {
         font-size: 1.4rem;
     }
 
-    /* Footer layout */
     .footer-container {
         flex-direction: column;
         text-align: left;

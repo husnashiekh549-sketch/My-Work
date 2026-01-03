@@ -16,7 +16,7 @@
       
      <nav class="navbar">
         <a href="#home">HOME</a>
-        <a href="#about">ABOUT</a>
+        <a href="#mission">MISSION</a>
         <a href="#projects">PROJECTS</a>
         <a href="#resources">RESOURCES</a>
         <a href="#contact">CONTACT</a>
@@ -142,15 +142,20 @@
     <h1 class="heading">Contact Us</h1>
 
     <div class="contact-container">
-        <form action="" method="post">
-            <input type="text" name="name" placeholder="Your Name" class="input-box" required>
-
-            <input type="email" name="email" placeholder="Your Email" class="input-box" required>
-
-            <textarea name="message" placeholder="Your Message" class="input-box" required></textarea>
+        <form action="contact.php" method="post">
+          <label for="text"> First Name :</label>
+        <input type="text" id="Name" name="name" placeholder="Enter Your First Name">
+        <label for="text"> Last Name :</label>
+        <input type="text" placeholder="Enter Your Last Name">
+        <label for="text"> Email Address :</label>
+        <input type="Email" placeholder="Enter Your Email">
+        <label for="text"> Phone Number :</label>
+        <input type="Phone Number" placeholder="Enter Your Phone Number">
+        <label>Message:</label>
+         <textarea name="message" placeholder="Enter your message"></textarea>
 
             <button type="submit" class="contact-btn">
-                Send Message
+                Submit
             </button>
         </form>
     </div>

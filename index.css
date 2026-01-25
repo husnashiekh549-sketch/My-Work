@@ -18,7 +18,7 @@ body {
     margin: 0;
     overflow-x: hidden;
     padding-top: 90px;
-    background-color: #2a853c; 
+    background-color: #2b912b; 
 }
 
 /* HEADER */
@@ -27,7 +27,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    background: #2a853c;
+    background:#2b912b;
     padding: 2rem 9%;
     display: flex;
     align-items: center;
@@ -55,7 +55,7 @@ header {
 
 .navbar a:hover {
     color: #fff;
-    border-bottom: 2px solid #2a853c;
+    border-bottom: 2px solid #2b912b;
 }
 
 .search {
@@ -112,7 +112,7 @@ header {
     margin: 30px 20px;
     border-radius: 30px;
     font-weight: bold;
-    border: 2px solid #1f6d1f;
+    border: 2px solid #2b912b;
     background: transparent;
     color: #fff;
     cursor: pointer;
@@ -129,7 +129,7 @@ header {
     bottom: 0;
     width: 0%;
     height: 100%;
-    background: #1f6d1f;
+    background:#2b912b;
     border-radius: 30px;
     z-index: -1;
     transition: 0.5s;
@@ -149,7 +149,6 @@ header {
     background: #fff;
     text-align: center;
 }
-
 .heading {
     font-size: 4rem;
     color: var(--green);
